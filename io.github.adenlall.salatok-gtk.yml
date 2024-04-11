@@ -20,4 +20,4 @@ modules:
     sources:
       - type: git
         url: https://github.com/adenlall/salatok-gtk.git
-        commit: "9aa8122123ae453bbdd107f0d8aece9934ee9c6f"
+        commit: "a36cb842470b7ef57c9eb9d4aaf3809cb608c39e"
