@@ -1,0 +1,91 @@
+From ed8c7b636a5c7d383f0417b2c0fb799002344b90 Mon Sep 17 00:00:00 2001
+From: Sabri Ünal <yakushabb@gmail.com>
+Date: Tue, 12 Nov 2024 21:36:49 +0300
+Subject: [PATCH] Fix appdata papercuts
+
+---
+ data/io.github.adenlall.salatok-gtk.appdata.xml | 41 +++--------------------------------------
+ data/io.github.adenlall.salatok-gtk.desktop     |  2 +-
+ 2 files changed, 4 insertions(+), 39 deletions(-)
+
+diff --git a/data/io.github.adenlall.salatok-gtk.appdata.xml b/data/io.github.adenlall.salatok-gtk.appdata.xml
+index 9c3274e..35f4e35 100644
+--- a/data/io.github.adenlall.salatok-gtk.appdata.xml
++++ b/data/io.github.adenlall.salatok-gtk.appdata.xml
+@@ -63,7 +63,7 @@
+   <launchable type="desktop-id">@APP_ID@.desktop</launchable>
+   <url type="homepage">https://github.com/adenlall/salatok-gtk</url>
+   <url type="bugtracker">https://github.com/adenlall/salatok-gtk/issues</url>
+-  <url type="contribute">https://github.com/adenlall/salatok-gtk/pulls</url>
++  <url type="vcs-browser">https://github.com/adenlall/salatok-gtk</url>
+   <url type="contact">https://github.com/adenlall/issues</url>
+   <url type="donation">https://liberapay.com/adenlall</url>
+ 
+@@ -133,49 +133,14 @@
+   </releases>
+ 
+ 
+-  <custom>
+-    <value key="Purism::form_factor">workstation</value>
+-  </custom>
+-
+-
+   <screenshots>
+     <screenshot type="default">
+-      <image>https://adenlall.vercel.app/salatok-gtk/1.png</image>
++      <image>https://i.imgur.com/dq5vdNS.jpeg</image>
+       <caption>default home screen</caption>
+     </screenshot>
+     <screenshot>
+-      <image>https://adenlall.vercel.app/salatok-gtk/2.png</image>
++      <image>https://i.imgur.com/7uTHQwN.jpeg</image>
+       <caption>all day salats times screen</caption>
+     </screenshot>
+-    <screenshot>
+-      <image>https://adenlall.vercel.app/salatok-gtk/3.png</image>
+-      <caption>salats screen UI tweaks</caption>
+-    </screenshot>
+-    <screenshot>
+-      <image>https://adenlall.vercel.app/salatok-gtk/4.png</image>
+-      <caption>Quran reader default screen</caption>
+-    </screenshot>
+-    <screenshot>
+-      <image>https://adenlall.vercel.app/salatok-gtk/5.png</image>
+-      <caption>Quran reader with English</caption>
+-    </screenshot>
+-    <screenshot>
+-      <image>https://adenlall.vercel.app/salatok-gtk/6.png</image>
+-      <caption>Quran reader with Korean</caption>
+-    </screenshot>
+-    <screenshot>
+-      <image>https://adenlall.vercel.app/salatok-gtk/7.png</image>
+-      <caption>Quran reader with Russian</caption>
+-    </screenshot>
+-    <screenshot>
+-      <image>https://adenlall.vercel.app/salatok-gtk/9.png</image>
+-      <caption>Quran player with many reciters</caption>
+-    </screenshot>
+-    <screenshot>
+-      <image>https://adenlall.vercel.app/salatok-gtk/10.png</image>
+-      <caption>Settings screen</caption>
+-    </screenshot>
+   </screenshots>
+-
+-
+ </component>
+\ No newline at end of file
+diff --git a/data/io.github.adenlall.salatok-gtk.desktop b/data/io.github.adenlall.salatok-gtk.desktop
+index 27aa3b1..85384f3 100644
+--- a/data/io.github.adenlall.salatok-gtk.desktop
++++ b/data/io.github.adenlall.salatok-gtk.desktop
+@@ -7,6 +7,6 @@ Icon=@APP_ID@
+ Type=Application
+ Terminal=false
+ StartupNotify=true
+-Categories=GNOME;GTK;Accessibility;Core;
++Categories=GTK;Utility;
+ Keywords=Salat;Quran;Prayer;Islam;Time;
+ 
+--
+libgit2 1.7.2
+

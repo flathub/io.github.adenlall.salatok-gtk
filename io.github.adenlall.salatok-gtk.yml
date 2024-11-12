@@ -21,3 +21,5 @@ modules:
       - type: git
         url: https://github.com/adenlall/salatok-gtk.git
         commit: "80438b9f88703ef42b436ba7d0e1198272aeb5bb"
+      - type: patch
+        path: "fix-appdata.patch"
