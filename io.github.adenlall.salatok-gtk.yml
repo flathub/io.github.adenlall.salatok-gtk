@@ -20,6 +20,6 @@ modules:
     sources:
       - type: git
         url: https://github.com/adenlall/salatok-gtk.git
-        commit: "80438b9f88703ef42b436ba7d0e1198272aeb5bb"
+        commit: "f953f1d9ff0dd4fd7e071c859b3c2ef7d706e58f"
       - type: patch
         path: "fix-appdata.patch"
