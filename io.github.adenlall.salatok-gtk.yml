@@ -1,18 +1,18 @@
 id: io.github.adenlall.salatok-gtk
 runtime: org.gnome.Platform
-runtime-version: '46'
+runtime-version: '49'
 sdk: org.gnome.Sdk
 sdk-extensions:
-- org.freedesktop.Sdk.Extension.node18
+- org.freedesktop.Sdk.Extension.node20
 - org.freedesktop.Sdk.Extension.typescript
 command: io.github.adenlall.salatok-gtk
 finish-args:
-- "--share=ipc"
-- "--share=network"
-- "--device=dri"
-- "--socket=fallback-x11"
-- "--socket=wayland"
-- "--socket=pulseaudio"
+- --share=ipc
+- --share=network
+- --device=dri
+- --socket=fallback-x11
+- --socket=wayland
+- --socket=pulseaudio
 modules:
   - name: salatok
     builddir: true
@@ -20,6 +20,6 @@ modules:
     sources:
       - type: git
         url: https://github.com/adenlall/salatok-gtk.git
-        commit: "f953f1d9ff0dd4fd7e071c859b3c2ef7d706e58f"
+        commit: f953f1d9ff0dd4fd7e071c859b3c2ef7d706e58f
       - type: patch
-        path: "fix-appdata.patch"
+        path: fix-appdata.patch
